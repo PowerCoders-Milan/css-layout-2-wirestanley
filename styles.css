@@ -1,17 +1,22 @@
 /* USE CSS LAYOUTS HERE */
-
-.header {
-
+.grid-body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto 1fr auto;
+    column-gap: 2px;
+}
+.grid-header {
+    background-color: blueviolet;
 }
 
-.main {
-
+.grid-main {
+padding: 15px 5px 10px 5px;
+background-color: blue;
 }
 
-.footer-grid {
-
+.grid-footer {
+    grid-area: footer;
+    background-color: brown;
 }
 
-.footer-flex {
-
-}
