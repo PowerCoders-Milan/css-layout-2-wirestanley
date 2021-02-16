@@ -1,0 +1,24 @@
+.flex-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-header {
+    background-color: coral;
+    flex: 1;
+}
+
+.flex-main {
+    background-color: darkcyan;
+    height: 10vh;
+}
+.flex-content{
+    background-color: gray;
+    flex: 1;
+}
+
+.flex-footer {
+    background-color: green;
+    height: 10vh;
+}

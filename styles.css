@@ -1,22 +1,28 @@
 /* USE CSS LAYOUTS HERE */
 .grid-body {
-    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:auto 1fr auto;
-    column-gap: 2px;
+    min-height: 100vh;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 .grid-header {
     background-color: blueviolet;
+
 }
 
 .grid-main {
-padding: 15px 5px 10px 5px;
 background-color: blue;
 }
 
 .grid-footer {
-    grid-area: footer;
     background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 4;
+    grid-row-end: span 1;
 }
 
+.grid-content {
+background-color: cadetblue;
+}
